@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Electrical Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Your Name</h1>
+    <p>Electrical Engineer | Embedded Systems | Hardware Design</p>
+    <div class="links">
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+    </div>
+</header>
+
+<section>
+    <h2>About</h2>
+    <p>
+        I'm an electrical engineer with experience in FPGA design, embedded systems, and lab infrastructure.
+        I focus on building scalable, high-performance systems and delivering real-world engineering solutions.
+    </p>
+</section>
+
+<section>
+    <h2>Projects</h2>
+
+    <div class="card">
+        <h3>Autonomous Robot (ROS2)</h3>
+        <p>Designed and implemented autonomous navigation using ROS2 and C. Achieved 100% performance score.</p>
+    </div>
+
+    <div class="card">
+        <h3>Magnetic Induction Communication System</h3>
+        <p>Developed underwater-to-air communication using FPGA-generated analog signals and high-current coils.</p>
+    </div>
+
+    <div class="card">
+        <h3>Lidar Mapping System</h3>
+        <p>Built a lidar-based sensing system with real-time processing. Project achieved 100% grade.</p>
+    </div>
+
+</section>
+
+<section>
+    <h2>Experience</h2>
+
+    <div class="card">
+        <h3>Tesla Energy</h3>
+        <p>Worked across lab infrastructure, procurement, and system design. Became a go-to engineer for cross-team support.</p>
+    </div>
+
+    <div class="card">
+        <h3>Lockheed Martin</h3>
+        <p>Electrical engineering co-op focused on system-level design and testing.</p>
+    </div>
+
+    <div class="card">
+        <h3>Noze</h3>
+        <p>Rapid prototyping team contributing to bringing a product to market.</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Your Name</p>
+</footer>
+
+</body>
+</html>
