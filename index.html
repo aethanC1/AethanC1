@@ -1,94 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aethan Cubitt | Electrical Engineer</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aethan Cubitt | Electronic Design Engineer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0f1722;
+            color: #e5e7eb;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #7dd3fc;
+            text-decoration: none;
+            transition: 0.2s ease;
+        }
+
+        a:hover {
+            color: #bae6fd;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            background-color: rgba(15, 23, 34, 0.95);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid #243041;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 24px;
+        }
+
+        .nav-logo {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #f9fafb;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+        }
+
+        .nav-links a {
+            color: #d1d5db;
+            font-size: 0.95rem;
+        }
+
+        .hero {
+            max-width: 1100px;
+            margin: auto;
+            padding: 120px 24px 80px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            line-height: 1;
+            margin-bottom: 18px;
+            color: #f9fafb;
+        }
+
+        .hero h2 {
+            font-size: 1.4rem;
+            font-weight: normal;
+            color: #94a3b8;
+            margin-bottom: 28px;
+        }
+
+        .hero-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 80px 24px;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 36px;
+            color: #f9fafb;
+        }
+
+        .card {
+            background-color: #182230;
+            border: 1px solid #263445;
+            border-radius: 14px;
+            padding: 28px;
+            margin-bottom: 24px;
+            transition: 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            border-color: #3b82f6;
+        }
+
+        .card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #f8fafc;
+        }
+
+        .card .date {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            margin-bottom: 16px;
+        }
+
+        .card p {
+            color: #cbd5e1;
+            margin-bottom: 18px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #2563eb;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+        }
+
+        .button:hover {
+            background-color: #3b82f6;
+            color: white;
+        }
+
+        .sailing-highlight {
+            font-size: 1.15rem;
+            color: #dbeafe;
+            margin-bottom: 28px;
+            max-width: 800px;
+        }
+
+        footer {
+            border-top: 1px solid #243041;
+            padding: 40px 24px;
+            text-align: center;
+            color: #94a3b8;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+
+            .hero h2 {
+                font-size: 1.1rem;
+            }
+
+            .nav-container {
+                flex-direction: column;
+                gap: 14px;
+            }
+
+            .nav-links {
+                gap: 18px;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-<header>
-    <h1>Aethan Cubitt</h1>
-    <p>Electrical Engineer | Hardware Design | Embedded Systems</p>
-    <div class="links">
-        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-    </div>
-</header>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-logo">Aethan Cubitt</div>
 
-<section>
-    <h2>About</h2>
-    <p>
-        I’m an electrical engineer focused on turning concepts into reliable, real-world systems. My work spans lab infrastructure, hardware design, and rapid prototyping, where I solve cross-functional problems and help teams move quickly from idea to execution. I’m known for being a dependable resource across electrical design, integration, and scaling technical environments.
-    </p>
-    <p>
-        I prioritize clear design, fast iteration, and strong ownership. With experience in PCB design, embedded systems, and power systems, I focus on delivering practical, high-impact solutions while continuously growing my technical depth and system-level thinking.
-    </p>
-</section>
+            <div class="nav-links">
+                <a href="#landing">Landing Page</a>
+                <a href="#career">Career</a>
+                <a href="#sailing">Sailing</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-<section>
-    <h2>Projects</h2>
+    <section class="hero" id="landing">
+        <h1>Aethan Cubitt</h1>
 
-    <div class="card">
-        <h3>Autonomous Robot (ROS2)</h3>
-        <p>
-            Led development of an autonomous mobile robot using ROS2 and C. Implemented sensor fusion, path planning, and real-time control. Achieved a 100% performance score and demonstrated reliable navigation in dynamic environments.
+        <h2>Electronic Design Engineer — Tesla Energy</h2>
+
+        <div class="hero-links">
+            <a href="https://linkedin.com/in/yourprofile" target="_blank">
+                LinkedIn
+            </a>
+
+            <a href="https://github.com/yourusername" target="_blank">
+                GitHub
+            </a>
+        </div>
+    </section>
+
+    <section class="section" id="career">
+
+        <h2>Career</h2>
+
+        <div class="card">
+            <h3>Tesla Energy</h3>
+
+            <div class="date">
+                Start Date — Present
+            </div>
+
+            <p>
+                Add short description here.
+            </p>
+
+            <a class="button" href="#">
+                Company / Project Link
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>Lockheed Martin</h3>
+
+            <div class="date">
+                Start Date — End Date
+            </div>
+
+            <p>
+                Add short description here.
+            </p>
+
+            <a class="button" href="#">
+                Company / Project Link
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>Noze</h3>
+
+            <div class="date">
+                Start Date — End Date
+            </div>
+
+            <p>
+                Add short description here.
+            </p>
+
+            <a class="button" href="#">
+                Company / Project Link
+            </a>
+        </div>
+
+    </section>
+
+    <section class="section" id="sailing">
+
+        <h2>Sailing</h2>
+
+        <p class="sailing-highlight">
+            Outside of engineering, sailing has been one of the biggest drivers of my discipline, teamwork, and resilience. I competed on the Canadian National Sailing Team and later completed a transatlantic crossing across the Atlantic Ocean.
         </p>
-    </div>
 
-    <div class="card">
-        <h3>Magnetic Induction Communication System</h3>
-        <p>
-            Designed and built a wireless communication system for underwater-to-air signal transmission. Generated analog signals from FPGA, designed amplification and filtering stages, and drove high-current coils (~5A) for transmission.
-        </p>
-    </div>
+        <div class="card">
+            <h3>Competitive Sailing</h3>
 
-    <div class="card">
-        <h3>Lidar Mapping System</h3>
-        <p>
-            Developed a lidar-based sensing and mapping system with real-time data processing. Integrated hardware and software pipelines to generate spatial awareness, achieving a final project grade of 100%.
-        </p>
-    </div>
+            <p>
+                Add details about racing experience, training, regattas, classes sailed, and achievements.
+            </p>
+        </div>
 
-    <div class="card">
-        <h3>Lab Infrastructure & Electrical Systems</h3>
-        <p>
-            Designed and deployed electrical systems supporting high-power lab equipment, including grid simulators, test infrastructure, and custom electrical distributions. Focused on reliability, scalability, and safety.
-        </p>
-    </div>
+        <div class="card">
+            <h3>Atlantic Crossing</h3>
 
-</section>
+            <p>
+                Add details about the voyage, route, challenges, navigation, and lessons learned at sea.
+            </p>
+        </div>
 
-<section>
-    <h2>Experience</h2>
+        <a class="button" href="#sailing">
+            Explore Sailing Experience
+        </a>
 
-    <div class="card">
-        <h3>Tesla Energy — Electrical Engineer</h3>
-        <p>
-            Work across lab infrastructure, electrical design, and equipment integration to support battery and power systems testing. Act as a go-to engineer for cross-functional teams, handling procurement, system design, troubleshooting, and scaling lab capabilities to meet aggressive timelines.
-        </p>
-    </div>
+    </section>
 
-    <div class="card">
-        <h3>Lockheed Martin — Electrical Engineering Intern</h3>
-        <p>
-            Contributed to system-level electrical design and testing in a defense environment. Supported validation, documentation, and integration of complex electrical systems.
-        </p>
-    </div>
+    <section class="section" id="projects">
 
-    <div class="card">
-        <h3>Noze — Rapid Prototyping Engineer</h3>
-        <p>
-            Worked on a fast-paced prototyping team to help bring a product to market. Focused on iterative hardware development, testing, and cross-disciplinary collaboration.
-        </p>
-    </div>
+        <h2>Project Showcase</h2>
 
-</section>
+        <div class="card">
+            <h3>Project Title</h3>
 
-<footer>
-    <p>© 2026 Your Name</p>
-</footer>
+            <p>
+                Add project description, technologies used, images, GitHub links, or technical writeups.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Project Title</h3>
+
+            <p>
+                Add project description, technologies used, images, GitHub links, or technical writeups.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="section" id="contact">
+
+        <h2>Contact</h2>
+
+        <div class="card">
+            <p>
+                Email: your.email@email.com
+            </p>
+
+            <p>
+                LinkedIn: linkedin.com/in/yourprofile
+            </p>
+
+            <p>
+                GitHub: github.com/yourusername
+            </p>
+        </div>
+
+    </section>
+
+    <footer>
+        © 2026 Aethan Cubitt
+    </footer>
 
 </body>
 </html>
