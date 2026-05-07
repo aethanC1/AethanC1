@@ -6,6 +6,7 @@
     <title>Aethan Cubitt | Electronic Design Engineer</title>
 
     <style>
+
         * {
             margin: 0;
             padding: 0;
@@ -58,6 +59,7 @@
         .nav-links {
             display: flex;
             gap: 28px;
+            flex-wrap: wrap;
         }
 
         .nav-links a {
@@ -88,6 +90,7 @@
         .hero-links {
             display: flex;
             gap: 24px;
+            flex-wrap: wrap;
         }
 
         .section {
@@ -122,7 +125,7 @@
             color: #f8fafc;
         }
 
-        .card .date {
+        .date {
             color: #94a3b8;
             font-size: 0.95rem;
             margin-bottom: 16px;
@@ -130,7 +133,7 @@
 
         .card p {
             color: #cbd5e1;
-            margin-bottom: 18px;
+            margin-bottom: 16px;
         }
 
         .button {
@@ -140,6 +143,7 @@
             padding: 10px 18px;
             border-radius: 8px;
             font-size: 0.95rem;
+            margin-top: 10px;
         }
 
         .button:hover {
@@ -147,11 +151,29 @@
             color: white;
         }
 
-        .sailing-highlight {
-            font-size: 1.15rem;
-            color: #dbeafe;
-            margin-bottom: 28px;
-            max-width: 800px;
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            border-radius: 14px;
+            border: 1px solid #263445;
+            object-fit: cover;
+        }
+
+        .map-container {
+            margin-top: 30px;
+            overflow: hidden;
+            border-radius: 14px;
+            border: 1px solid #263445;
+        }
+
+        .map-container img {
+            width: 100%;
+            display: block;
         }
 
         footer {
@@ -178,9 +200,10 @@
             }
 
             .nav-links {
-                gap: 18px;
+                justify-content: center;
             }
         }
+
     </style>
 </head>
 
@@ -188,31 +211,61 @@
 
     <nav>
         <div class="nav-container">
-            <div class="nav-logo">Aethan Cubitt</div>
+
+            <div class="nav-logo">
+                Aethan Cubitt
+            </div>
 
             <div class="nav-links">
                 <a href="#landing">Landing Page</a>
                 <a href="#career">Career</a>
                 <a href="#sailing">Sailing</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
             </div>
+
         </div>
     </nav>
 
     <section class="hero" id="landing">
+
         <h1>Aethan Cubitt</h1>
 
-        <h2>Electronic Design Engineer — Tesla Energy</h2>
+        <h2>
+            Electronic Design Engineer — Tesla Energy
+        </h2>
 
         <div class="hero-links">
-            <a href="https://linkedin.com/in/yourprofile" target="_blank">
+
+            <a href="https://www.linkedin.com/in/aethancubitt/" target="_blank">
                 LinkedIn
             </a>
 
-            <a href="https://github.com/yourusername" target="_blank">
+            <a href="https://github.com/aethanC1" target="_blank">
                 GitHub
             </a>
+
         </div>
+
+    </section>
+
+    <section class="section">
+
+        <h2>About</h2>
+
+        <div class="card">
+
+            <p>
+                I’m an Electronic Design Engineer at Tesla Energy focused on building and scaling test infrastructure for next-generation energy products. My work spans electrical design, rapid prototyping, high-power systems, and lab development, where I help transform early-stage concepts into reliable real-world systems ready for product launch.
+            </p>
+
+            <p>
+                I enjoy solving complex technical problems with practical engineering solutions, combining strong system-level thinking with hands-on execution. Outside of engineering, I competitively race sailboats, previously sailed on the Canadian National Team, and completed a transatlantic ocean crossing.
+            </p>
+
+        </div>
+
     </section>
 
     <section class="section" id="career">
@@ -220,51 +273,79 @@
         <h2>Career</h2>
 
         <div class="card">
-            <h3>Tesla Energy</h3>
+
+            <h3>Tesla Energy — Electronic Design Engineer</h3>
 
             <div class="date">
-                Start Date — Present
+                March 2025 — Present
             </div>
 
             <p>
-                Add short description here.
+                Supporting Tesla Energy R&D programs through the design and deployment of advanced electrical test infrastructure for next-generation products. Responsibilities include developing high-power test setups, optimizing validation systems for product launches, and building scalable lab environments to support rapid engineering development.
             </p>
 
-            <a class="button" href="#">
-                Company / Project Link
+            <p>
+                Contributed to the installation and deployment of the first V4 Supercharger Cabinet capable of delivering up to 500kW charging.
+            </p>
+
+            <p>
+                <strong>Technologies:</strong> AutoCAD Electrical • High Power Systems • Test Infrastructure • Electrical Design
+            </p>
+
+            <a class="button"
+               href="https://insideevs.com/news/774097/tesla-starts-rolling-out-500-kw-superchargers/"
+               target="_blank">
+                Learn More
             </a>
+
         </div>
 
         <div class="card">
-            <h3>Lockheed Martin</h3>
+
+            <h3>Lockheed Martin — Electrical Engineer Ship Integration</h3>
 
             <div class="date">
-                Start Date — End Date
+                April 2024 — September 2024
             </div>
 
             <p>
-                Add short description here.
+                Worked within the Canadian Surface Combatant (CSC) Program supporting the integration of advanced naval combat systems. Responsibilities included developing detailed 3D compartment and topside models, performing engineering analyses such as CFD and line-of-sight studies, and supporting technical documentation for ship system integration.
             </p>
 
-            <a class="button" href="#">
-                Company / Project Link
+            <p>
+                <strong>Technologies:</strong> CAD Modeling • CFD Analysis • Technical Documentation • Systems Integration
+            </p>
+
+            <a class="button"
+               href="https://www.lockheedmartin.com/en-ca/csc.html"
+               target="_blank">
+                Learn More
             </a>
+
         </div>
 
         <div class="card">
-            <h3>Noze</h3>
+
+            <h3>Noze — Electrical Engineering Intern</h3>
 
             <div class="date">
-                Start Date — End Date
+                2023
             </div>
 
             <p>
-                Add short description here.
+                Designed and prototyped a battery system for a breath analysis device by developing power profiles, evaluating battery chemistries and battery management systems, and documenting performance data. Worked in a fast-paced prototyping environment focused on rapid iteration, testing, and product development.
             </p>
 
-            <a class="button" href="#">
-                Company / Project Link
+            <p>
+                <strong>Technologies:</strong> SolidWorks • Oscilloscopes • Multimeters • Excel • BMS • Prototype Testing
+            </p>
+
+            <a class="button"
+               href="https://www.noze.ca/"
+               target="_blank">
+                Learn More
             </a>
+
         </div>
 
     </section>
@@ -273,50 +354,84 @@
 
         <h2>Sailing</h2>
 
-        <p class="sailing-highlight">
-            Outside of engineering, sailing has been one of the biggest drivers of my discipline, teamwork, and resilience. I competed on the Canadian National Sailing Team and later completed a transatlantic crossing across the Atlantic Ocean.
-        </p>
-
         <div class="card">
+
             <h3>Competitive Sailing</h3>
 
             <p>
-                Add details about racing experience, training, regattas, classes sailed, and achievements.
+                Sailing has been a major part of my life and continues to shape how I approach competition, teamwork, and resilience. I previously competed on the Canadian National Sailing Team and was ranked 2nd overall in North America in the Laser class in 2021, while holding the top U21 ranking.
             </p>
+
+            <p>
+                I also earned multiple Ontario and Quebec Provincial Championship titles between 2018 and 2020. Today, I continue racing competitively in San Francisco aboard J/105s within one of the most competitive fleets in the country.
+            </p>
+
         </div>
 
         <div class="card">
+
             <h3>Atlantic Crossing</h3>
 
             <p>
-                Add details about the voyage, route, challenges, navigation, and lessons learned at sea.
+                One of the most impactful experiences of my life was completing a transatlantic crossing from Antigua to the Azores alongside my father and an experienced crew of sailors.
             </p>
-        </div>
 
-        <a class="button" href="#sailing">
-            Explore Sailing Experience
-        </a>
+            <p>
+                Living on a four-hours-on, four-hours-off watch schedule for 10 days while racing across the Atlantic created unforgettable moments — from bioluminescent dolphins glowing beneath the boat at night to navigating massive storms and heavy offshore conditions.
+            </p>
+
+            <p>
+                Special thanks to Britannia Yacht Club in Ottawa, Ontario, where my sailing journey began.
+            </p>
+
+            <div class="map-container">
+                <img src="images/atlantic-map.jpg" alt="Atlantic Crossing Route">
+            </div>
+
+        </div>
 
     </section>
 
     <section class="section" id="projects">
 
-        <h2>Project Showcase</h2>
+        <h2>Projects</h2>
 
         <div class="card">
-            <h3>Project Title</h3>
+
+            <h3>Magnetic Induction Communication Design</h3>
 
             <p>
-                Add project description, technologies used, images, GitHub links, or technical writeups.
+                Designed and implemented a magnetic induction communication transmitter focused on underwater-to-surface communication. The project involved FPGA-based signal generation, amplifier design, signal analysis, and high-current transmission systems for underwater communication applications.
             </p>
+
+            <p>
+                The project ranked in the Top 3 capstone projects of the year and received an invitation to present at the Atlantic IEEE Paper Conference.
+            </p>
+
+            <p>
+                <strong>Technologies:</strong> FPGA • Altium • Signal Analysis
+            </p>
+
+            <a class="button"
+               href="https://github.com/aethanC1/Capstone_MI_Transmitter"
+               target="_blank">
+                View Project
+            </a>
+
         </div>
 
-        <div class="card">
-            <h3>Project Title</h3>
+    </section>
 
-            <p>
-                Add project description, technologies used, images, GitHub links, or technical writeups.
-            </p>
+    <section class="section" id="gallery">
+
+        <h2>Photo Gallery</h2>
+
+        <div class="gallery-grid">
+
+            <img src="images/photo1.jpg" alt="Gallery Photo">
+            <img src="images/photo2.jpg" alt="Gallery Photo">
+            <img src="images/photo3.jpg" alt="Gallery Photo">
+
         </div>
 
     </section>
@@ -326,17 +441,18 @@
         <h2>Contact</h2>
 
         <div class="card">
+
             <p>
-                Email: your.email@email.com
+                Email: aethansailor@gmail.com
             </p>
 
             <p>
-                LinkedIn: linkedin.com/in/yourprofile
+                Reach out to me on
+                <a href="https://www.linkedin.com/in/aethancubitt/" target="_blank">
+                    LinkedIn
+                </a>
             </p>
 
-            <p>
-                GitHub: github.com/yourusername
-            </p>
         </div>
 
     </section>
